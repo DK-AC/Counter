@@ -23,18 +23,10 @@ export function CountValue() {
             </div>
             <div className={'App-button'}>
                 <Button
-                    title={'inc'}
                     count={count}
                     addCount={addCount}
                     maxCount={max_count}
                     resetCount={resetCount}
-                />
-                <Button
-                    title={'reset'}
-                    count={count}
-                    resetCount={resetCount}
-                    maxCount={max_count}
-                    addCount={addCount}
                 />
             </div>
         </div>

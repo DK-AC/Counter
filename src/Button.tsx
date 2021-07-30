@@ -1,11 +1,10 @@
 import React from "react";
 
 type ButtonPropsType = {
-    title: string
     count: number
     addCount: () => void
     resetCount: () => void
-    maxCount:number
+    maxCount: number
 }
 
 export function Button(props: ButtonPropsType) {
@@ -17,7 +16,13 @@ export function Button(props: ButtonPropsType) {
                 onClick={props.addCount}
                 disabled={props.count === props.maxCount}
             >
-                {props.title}
+                inc
+            </button>
+            <button
+                onClick={props.resetCount}
+                disabled={props.count === 0}
+            >
+                reset
             </button>
         </>
     )
