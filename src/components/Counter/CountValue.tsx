@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {Button} from "./Button";
-import {Display} from "./Display";
+import {Button} from "../Button/Button";
+import {Display} from "../Display/Display";
 
 
 export function CountValue() {
@@ -23,7 +23,7 @@ export function CountValue() {
                 style={offCnt}>
                 <Display count={count}/>
             </div>
-            <div className={'App-button'}>
+            <div>
                 <Button
                     count={count}
                     addCount={addCount}

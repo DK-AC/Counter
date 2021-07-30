@@ -25,13 +25,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     color: #282c34;
 }
 
-.App-button button {
-    background-color: #61dafb;
-    margin-left: 5px;
-}
 
