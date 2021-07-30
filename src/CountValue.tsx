@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import {Button} from "./Button";
+
 
 export function CountValue() {
 
@@ -9,14 +11,32 @@ export function CountValue() {
     const addCount = () => setCount(count + 1)
     const resetCount = () => setCount(0)
 
-    const offBtn = {
+    const offCnt = {
         color: count >= max_count ? 'red' : '',
     }
 
     return (
-        <div className={'App-number'}
-             style={offBtn}>
-            {count}
+        <div>
+            <div className={'App-number'}
+                 style={offCnt}>
+                {count}
+            </div>
+            <div className={'App-button'}>
+                <Button
+                    title={'inc'}
+                    count={count}
+                    addCount={addCount}
+                    maxCount={max_count}
+                    resetCount={resetCount}
+                />
+                <Button
+                    title={'reset'}
+                    count={count}
+                    resetCount={resetCount}
+                    maxCount={max_count}
+                    addCount={addCount}
+                />
+            </div>
         </div>
     )
 }
