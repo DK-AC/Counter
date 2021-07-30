@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Button} from "./Button";
+import {Display} from "./Display";
 
 
 export function CountValue() {
@@ -17,9 +18,10 @@ export function CountValue() {
 
     return (
         <div>
-            <div className={'App-number'}
-                 style={offCnt}>
-                {count}
+            <div
+                className={'App-number'}
+                style={offCnt}>
+                <Display count={count}/>
             </div>
             <div className={'App-button'}>
                 <Button
@@ -32,3 +34,4 @@ export function CountValue() {
         </div>
     )
 }
+
